@@ -77,9 +77,29 @@ fn main() {
     {
         let x = 6;
         println!("The value of x is: {}", x);
-        //x is 6 because it is in a different scope
+        //x is 6 because it is in a different scope,
     }
     println!("The value of x is: {}", x);
     //x is 5
 }
 
+//SHADOWING
+fn main() {
+    let x: i32 = 5;
+    {
+        let x = 12; 
+        assert_eq!(x, 12);
+    }
+
+    assert_eq!(x, 5);
+
+    let x = 42;
+    println!("{}", x);
+
+    //Output 42
+}
+/*Explanation:
+In the code, shadowing occurs when `let x = 12;` inside the inner block replaces the outer `x`
+ (which is `5`) for that scope, allowing `assert_eq!(x, 12);` to pass without altering the outer `x`.
+ In sadowing the second variable `x`, is a new variable with a new value, 42.
+ */
