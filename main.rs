@@ -103,3 +103,12 @@ In the code, shadowing occurs when `let x = 12;` inside the inner block replaces
  (which is `5`) for that scope, allowing `assert_eq!(x, 12);` to pass without altering the outer `x`.
  In sadowing the second variable `x`, is a new variable with a new value, 42.
  */
+
+
+ //UNUSED VARIABLES 
+ /* Aside adding an underscore before the variable name , we can use the allow function to ignore the variable */
+ #[allow(unused_variables)]
+ fn main() {
+    let x = 5;
+    //empty output because the variable is not used
+}
