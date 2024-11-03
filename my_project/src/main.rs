@@ -4,5 +4,10 @@
 
 
 fn main() {
-    println!("Hello, world!");
+    let (x,y);
+    (x,..) = (1,2);
+    [..,y] = [1,2];
+
+    assert_eq!([x,y], [1,2]);
+    println!("Success!");
 }

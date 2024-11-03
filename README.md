@@ -2,14 +2,18 @@
 
 Welcome to **Learn Rust**! This repository is dedicated to helping you master the Rust programming language through a variety of tutorials, examples, and hands-on projects. Whether you're a complete beginner or an experienced developer looking to expand your skills, you’ll find valuable resources here.
 
-
-
 ## Introduction
 
 Rust is a systems programming language focused on safety, speed, and concurrency. It's ideal for building reliable and efficient software.
 This repository aims to provide clear and accessible learning materials to help you become proficient in Rust.
 
 ## Getting Started
+
+To compile codes :-
+
+- cd Learn-Rust
+- cd my_project
+- cargo run
 
 ### Prerequisites
 
@@ -25,3 +29,4 @@ Clone this repository to your local machine:
 git clone https://github.com/1am-programming/Learn-Rust.git
 cd Learn-Rust
 
+```
