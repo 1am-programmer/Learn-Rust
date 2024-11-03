@@ -1,6 +1,7 @@
 /**
  * DESTRUCTURING
  * Destructuring is a way to break down a complex data structure into smaller parts.
+ * With destructuring, we can declare multiple variables at once.
  * Tuples are data structure that can hold multiple values.
  */
 
@@ -13,3 +14,4 @@ fn main() {
 
     println!("success")
 }
+
