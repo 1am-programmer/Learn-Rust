@@ -14,6 +14,7 @@ To compile codes :-
 - cd Learn-Rust
 - cd my_project
 - cargo run
+  use the `main.rs file` to compile exercises 
 
 ### Prerequisites
 
