@@ -3,3 +3,7 @@
 // cargo run
 
 //1 byte = 8bits
+
+
+    
+

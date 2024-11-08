@@ -90,7 +90,7 @@ fn main() {
 }
 
 
-//Exercise - Fill in the blanks to make the code compile.
+//Exercise - Fill in the blanks to make the code` compile.
 fn main() {
     assert_eq!(i8::MAX, __); // MAX is a constant, which means the Largest signed 8bit integer ie 127
     assert_eq!(u8::MAX, __); // MAX is a constant, which means the Largest unsigned 8bit integer ie 255
@@ -121,3 +121,16 @@ fn main() {
 
 
 //Exercise - Modify assert to make it work
+func main() {
+    let v = 1_024 + 0xff + 0o77 + 0b1111_1111;
+    assert!(v == 1579);
+    println!("Success!")
+}
+// Here numbers are written in different number system [decimal, hexadecimal, octa, binary] so we convert it to basic numbers
+//Solution
+fn main() {
+    let v = 1024 + 255 + 63 + 255;
+    assert!(v == 1597);
+    println!("Success!")
+}
+//in rust you can perform mathematical operations on different number systems 
