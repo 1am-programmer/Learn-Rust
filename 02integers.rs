@@ -33,7 +33,7 @@
  usize   | arch dependent | 0 to 18,446,744,073,709,551,615
 
 //Note that the range of values for the integer types are not the same as the range of values for the floating point types.
- //Unsigned integers never go below 0`, and signed integers can go below `0`.
+//Unsigned integers never go below 0`, and signed integers can go below `0`.
 
 
  /*Arch dependent means that the size of the integer depends on the architecture of the computer.
@@ -49,3 +49,8 @@
  0 x 0007 | 0000 1000
  0 x 0008 | 0000 1001
  0 x 0009 | 0000 1010
+ 
+ 
+ 
+ //Note that the if we do not specify the type, the default is FLOAT f64 and INTEGERS are i32
+ //Note that we cannot assign a variable of a type to another of different type
