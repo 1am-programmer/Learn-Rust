@@ -56,11 +56,28 @@
  //Note that we cannot assign a variable of a type to another of different type
 
 
- //Exercise.. Remove something to make it work
+ //Exercise - Remove something to make it work
+
+ fn main() {
+    let x: i32 = 5;
+    let mut y: u32 = 5; //let y: u32 = 5;
+    y = x;
+    let z = 10; //let z:i32 = 10;
+    println!("success!")
+}
+//Since type of y is u32, it will not allow us to assign i32 to it, so we just take out the type of y, so rust infers the default int type [i32] to it.
+
+//Solution
+fn main() {
+    let x: i32 = 5;
+    let mut y = 5;
+    y = x;
+    let z = 10; //let z:i32 = 10;
+    println!("success!")
+}
 
 
-
-//Fill in the blanks to make the code compile.
+//Exercise - Fill in the blanks to make the code compile.
 fn main() {
     let v: u16 = 38_u8 as __; // We can directly annotate a type to a variable.
     println!("success!")
@@ -73,7 +90,7 @@ fn main() {
 }
 
 
-//Fill in the blanks to make the code compile.
+//Exercise - Fill in the blanks to make the code compile.
 fn main() {
     assert_eq!(i8::MAX, __); // MAX is a constant, which means the Largest signed 8bit integer ie 127
     assert_eq!(u8::MAX, __); // MAX is a constant, which means the Largest unsigned 8bit integer ie 255
@@ -86,7 +103,7 @@ fn main() {
     println!("Done")
 }
 
-//Fix errors and panics to make it work
+//Exercise - Fix errors and panics to make it work
 fn main() {
     let v1 = 251_u8 + 8;
     let v2 = i8::checked_add(251, 8).unwrap();
@@ -101,3 +118,6 @@ fn main() {
     // The 251 + 8 = 259, which is out of range for u8, so we convert it to u16.
     println!("{},{}", v1, v2);
 }
+
+
+//Exercise - Modify assert to make it work
