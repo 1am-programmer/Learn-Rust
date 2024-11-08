@@ -54,3 +54,50 @@
  
  //Note that the if we do not specify the type, the default is FLOAT f64 and INTEGERS are i32
  //Note that we cannot assign a variable of a type to another of different type
+
+
+ //Exercise.. Remove something to make it work
+
+
+
+//Fill in the blanks to make the code compile.
+fn main() {
+    let v: u16 = 38_u8 as __; // We can directly annotate a type to a variable.
+    println!("success!")
+}
+//So this variable v is expecting a u16 value, but it got a u8 value, so we need to convert it to same type using the 'as' keyword
+//Solution
+fn main() {
+    let v: u16 = 38_u8 as u16;
+    println!("success!")
+}
+
+
+//Fill in the blanks to make the code compile.
+fn main() {
+    assert_eq!(i8::MAX, __); // MAX is a constant, which means the Largest signed 8bit integer ie 127
+    assert_eq!(u8::MAX, __); // MAX is a constant, which means the Largest unsigned 8bit integer ie 255
+    println!("Done")
+}
+//Solution
+fn main() {
+    assert_eq!(i8::MAX, 127); // MAX is a constant, which means the Largest signed 8bit integer ie 127
+    assert_eq!(u8::MAX, 255); // MAX is a constant, which means the Largest unsigned 8bit integer ie 255
+    println!("Done")
+}
+
+//Fix errors and panics to make it work
+fn main() {
+    let v1 = 251_u8 + 8;
+    let v2 = i8::checked_add(251, 8).unwrap();
+    println!("{},{}", v1, v2);
+    // The 251 + 8 = 259, which is out of range for u8, so we convert it to u16.
+}
+
+//Solution
+fn main() {
+    let v1: u16 = 251_u16 + 8_u16;
+    let v2 = i16::checked_add(251, 8).unwrap();
+    // The 251 + 8 = 259, which is out of range for u8, so we convert it to u16.
+    println!("{},{}", v1, v2);
+}
